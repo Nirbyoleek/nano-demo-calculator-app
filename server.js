@@ -13,6 +13,7 @@ baseRouter.get("/greeting", (req, res) => {
 	res.status(200).send("Hello world!");
 });
 
+// Add Api
 baseRouter.post("/add", (req, res) => {
 	const { first, second } = req.body;
 	if (typeof first !== "number" || typeof second !== "number") {
@@ -24,6 +25,7 @@ baseRouter.post("/add", (req, res) => {
 	res.status(200).json({ result });
 });
 
+//Subtract api
 baseRouter.post("/subtract", (req, res) => {
 	const { first, second } = req.body;
 
